@@ -187,3 +187,61 @@ transition: transform .5s;
 }
 
 /* END OF SECTION 1 */
+
+/* SECTION 2 */
+.section-2 {
+    width: 100%;
+    padding: 10rem 0 15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2-heading {
+    font-size: 5rem;
+    font-weight: 300rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.services {
+    display: flex;
+}
+
+.service {
+    width: 35rem;
+    text-align: center;
+    margin: 0 5rem;
+}
+
+.service i {
+    font-size: 6rem;
+    color: #229fe7;
+    margin: 2rem 0;
+}
+
+.service-heading {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.service-paragraph {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.service-btn {
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    border: .1rem solid #036bb1;
+    color: #036bb1;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* END OF SECTION 2 */
