@@ -1,0 +1,66 @@
+/* COMMON STYLES  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.blue-btn {
+    width: 35rem;
+    height: 5em;
+    background-color: #056dd1;
+    color: #fff;
+    border-radius: 3rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* END OF COMMON STYLES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-logo {
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 800;
+    color: #fff;
+    position: relative;
+}
+
+.p-1 {
+    font-size: 4.5rem;
+    margin-right: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+.p-2 {
+    font-size: 4.5rem;
+    color: #bbb;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.5rem;
+}
