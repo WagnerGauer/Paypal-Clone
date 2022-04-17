@@ -115,6 +115,10 @@ html {
     display: flex;
 }
 
+.menu {
+    display: none;
+}
+
 .nav-list-item {
     height: 8rem;
     padding: 2rem;
@@ -149,6 +153,10 @@ html {
     flex-direction: column;
 }
 
+.dropdown-heading {
+    display: none;
+}
+
 .nav-dropdown-link-1 {
     font-size: 1.6rem;
     color: #fff;
@@ -176,10 +184,6 @@ font-size: 1.5rem;
 margin-left: 0.5rem;
 transition: transform .5s;
 }
-
-.nav-list-item:hover .nav-list-link i {
-    transform: rotateZ(180deg)
-} 
 
 .navbar-btn {
     width: 8rem;
@@ -796,6 +800,7 @@ transition: transform .5s;
          display: flex;
          align-items: center;
          justify-content: space-evenly;
+         transition: transform .6s cubic-bezier(1, 0, 0, 1);
      }
 
      .change .menu {
@@ -803,6 +808,7 @@ transition: transform .5s;
          position: fixed;
          top: 2rem;
          left: 6rem;
+         background-color: #eee;
      }
      
      .menu-icon {
@@ -816,23 +822,32 @@ transition: transform .5s;
          width: 2rem;
          height:.1rem;
          background-color: #fff;
+         transform-origin: left;
+         transition: transform .3s;
      }
 
      .change .line-1{
-        transform: rotate(240deg)
+        transform: rotate(45deg);
+        background-color: #444;
      }
 
      .change .line-2{
-
+        opacity: 0;
+        visibility: hidden;
      }
 
      .change .line-3{
-        transform: rotate(240deg)
+        transform: rotate(-45deg);
+        background-color: #444;
      }
 
      .menu span {
          font-size: 1.8rem;
          color: #fff;
+     }
+
+     .change .menu span {
+         color: #555;
      }
 
      .nav-list,
@@ -848,6 +863,11 @@ transition: transform .5s;
          flex-direction: column;
          padding-top: 2rem;
          z-index: 200;
+         transition: left .6s cubic-bezier(1, 0, 0, 1);
+     }
+
+     .change .nav-list {
+         left: 0;
      }
 
      .nav-dropdown-personal ,
@@ -861,6 +881,10 @@ transition: transform .5s;
      .nav-dropdown-item {
          width: 100%;
          margin: 1rem 1rem 0 1rem;
+     }
+
+     .dropdown-heading {
+         display: block;
      }
 
      .dropdown-heading a{
