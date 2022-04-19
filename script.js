@@ -22,7 +22,6 @@ document.querySelectorAll('.signup').forEach((signupBtn => {
 }))
 // END OF PAGES 
 
-// window.addEventListener("resize", ()=> {
     const dropdownItems = document.querySelectorAll(".dropdown-hover");
 
     if(window.innerWidth < 1000) {
@@ -74,7 +73,10 @@ document.querySelectorAll('.signup').forEach((signupBtn => {
         });
         
     }
-// })
+
+window.addEventListener("resize", ()=> {
+window.location.reload()
+})
 
 
 
